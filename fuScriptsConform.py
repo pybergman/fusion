@@ -30,7 +30,7 @@ def fuScriptReconform():
     pathSwitch = ""
     newLine = ""
 
-    for fuScript in os.listdir(pathFuScript):
+    for fuScript in sorted(os.listdir(pathFuScript)):
         if ".comp" in fuScript:
             fuComp = open(fuScript, "r")
             fuContent = fuComp.read()
